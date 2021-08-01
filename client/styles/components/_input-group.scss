@@ -1,0 +1,47 @@
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $m-size;
+    justify-content: center;
+    @media (min-width: $desktop-breakpoint) {
+        flex-direction: row;
+        margin-bottom: $l-size;
+    }
+}
+
+.input-group__item{
+    margin-bottom: $s-size;
+    > * {
+        width: 100%;
+    }
+    @media (min-width: $desktop-breakpoint) {
+        margin: 0 $s-size 0 0;
+    }
+}
+
+.input-group__item:first-child{
+    flex-grow: 1;
+}
+
+@media (max-width: $desktop-breakpoint) {
+    .DateRangePicker{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > div {
+            width: 100%;
+            .DateRangePickerInput {
+                width: 100%;
+                .DateInput {
+                    width: 45%;
+                }
+                .DateRangePickerInput_arrow {
+                    width: 5%;
+                }
+                .DateRangePickerInput_clearDates{
+                    @extend .DateRangePickerInput_arrow
+                }
+            }
+        }
+     }
+}

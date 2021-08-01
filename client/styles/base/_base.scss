@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,500,700);
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Roboto;
+    font-size: $m-size;
+    color: $dark-grey;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled{
+    cursor: not-allowed;
+}
+
+.is-active {
+    font-weight: bold;
+}
